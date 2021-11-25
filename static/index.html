@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   <meta name="description" content="Bootstrap Admin App + jQuery">
+   <meta name="keywords" content="app, responsive, jquery, bootstrap, dashboard, admin">
+   <title>Sistem Manajemen Rumah Sakit</title>
+   <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.min.css">
+   <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+   <link rel="stylesheet" href="vendor/animate.css/animate.min.css">
+   <link rel="stylesheet" href="vendor/whirl/dist/whirl.css">
+   <link rel="stylesheet" href="app/css/bootstrap.css" id="bscss">
+   <link rel="stylesheet" href="app/css/app.css" id="maincss">
+   <style>
+      a:hover{
+       text-decoration: none!important;
+      }
+   </style>
+</head>
+
+<body class="layout-h a">
+   <div class="wrapper">
+      <!-- top navbar-->
+      <header class="topnavbar-wrapper">
+         <!-- START Top Navbar-->
+         <nav role="navigation" class="navbar topnavbar">
+            <!-- START navbar header-->
+            <div class="navbar-header">
+               <a href="#/" class="navbar-brand">
+                  <div class="brand-logo">
+                     Sistem Manajemen Rumah Sakit
+                  </div>
+               </a>
+            </div>
+         </nav>
+      </header>
+      <section>
+         <div class="content-wrapper">
+            <div class="content-heading">
+               <i class="fa fa-dashboard">Rumah Sakit Tadika Mesra</i>
+               <small data-localize="dashboard.WELCOME"></small>
+            </div>
+            <div class="row">
+             <div class="row">
+               <div class="col-lg-4 col-md-6">
+                  <a href="patient.html">
+                  <div class="panel widget bg-success">
+                     <div class="row row-table">
+                        <div class="col-xs-4 text-center bg-success-dark pv-lg">
+                           <i class="fa fa-wheelchair" style="font-size:48px;"></i>
+                        </div>
+                        <div class="col-xs-8 pv-lg">
+                           <div class="h1 m0 text-bold" id="patientcount"></div>
+                           <div class="text-uppercase">Pasien</div>
+                        </div>
+                     </div>
+                  </div>
+                     </a>
+               </div>
+               <div class="col-lg-4 col-md-6">
+                  <a href="doctor.html">
+                  <div class="panel widget bg-danger">
+                     <div class="row row-table">
+                        <div class="col-xs-4 text-center bg-danger-dark pv-lg">
+                          <i class="fa fa-user-md" style="font-size:48px;"></i>
+                        </div>
+                        <div class="col-xs-8 pv-lg">
+                           <div class="h1 m0 text-bold" id="doctorcount"></div>
+                           <div class="text-uppercase">Dokter</div>
+                        </div>
+                     </div>
+                  </div>
+                     </a>
+               </div>
+                  <div class="col-lg-4 col-md-6">
+                  <a href="appointment.html">
+                  <div class="panel widget bg-primary">
+                     <div class="row row-table">
+                        <div class="col-xs-4 text-center bg-primary-dark pv-lg">
+                           <em class="icon-pencil fa-3x"></em>
+                        </div>
+                        <div class="col-xs-8 pv-lg">
+                           <div class="h1 m0 text-bold" id="appointmentcount"></div>
+                           <div class="text-uppercase">Perawatan</div>
+                        </div>
+                     </div>
+                  </div>
+                     </a>
+               </div>
+            </div>
+            </div>
+         </div>
+      </section>
+      <footer>
+         <span>Hangga.Prihadi</span>
+      </footer>
+   </div>
+   <script src="vendor/modernizr/modernizr.custom.js"></script>
+   <script src="vendor/jquery/dist/jquery.js"></script>
+   <script src="vendor/bootstrap/dist/js/bootstrap.js"></script>
+   <script src="vendor/jQuery-Storage-API/jquery.storageapi.js"></script>
+   <script src="vendor/jquery.easing/js/jquery.easing.js"></script>
+   <script src="vendor/animo.js/animo.js"></script>
+   <script src="vendor/jquery-localize-i18n/dist/jquery.localize.js"></script>
+   <script src="app/js/app.js"></script>
+<script src="js/home.js"></script>
+</body>
+
+</html>
